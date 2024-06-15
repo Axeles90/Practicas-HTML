@@ -1,1 +1,25 @@
 #lorem {color: aqua;}
+
+ul{
+    width: 50%;
+}
+
+#listaordenada{
+    background-color: rgb(229, 237, 235);
+    color: black;
+    font-style:italic;
+}
+
+#titlelista li{
+    border-style:groove;
+    border-radius: 3px;
+    border-color:black;
+    margin: 8px;
+    padding: 6px;
+    box-shadow: 2px 2px grey;
+    font-weight: bold;
+}
+#titlelista li:hover{
+    background-color: bisque;
+    box-shadow: 4px 4px grey;
+}
