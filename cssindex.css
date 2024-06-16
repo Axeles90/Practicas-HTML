@@ -52,3 +52,18 @@ input[type="text"]{
     border: solid lightblue 2px;
     border-radius: 10px;
 }
+.media{
+    border: grey solid 2px;
+    padding: 20px;
+    margin: 20px;
+}
+.piedepagina{
+    float: right;
+    width: 99%;
+    height: 100%;
+    background-color: rgb(193, 192, 192);
+    border: solid grey 3px;
+    color: black;
+    text-align: center;
+    position: fixed;
+}

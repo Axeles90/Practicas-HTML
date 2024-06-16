@@ -8,6 +8,7 @@
     <title>Pagina web MASTER FULLSTACK</title>
 </head>
 <body>
+<div class="cuerpo">
     <noscript>Tiene que activar javascript para poder ver la pagina</noscript>
     <a href="https://www.google.com">Este enlace hacia google</a><br>
     <p id="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut harum error voluptates rem <br>pariatur repellendus, fugit, exercitationem ad assumenda ipsam animi distinctio enim quasi? Ab atque rem earum distinctio quas.</p>
@@ -45,156 +46,166 @@
         </dl>
     </div>
     <!--DIV DE TABLAS-->
- <div class="tablas">   
-    <table border="3">
-        <caption>tabla SIMPLE con numeros</caption>
-        <tr><th>titulo1</th><th>titulo2</th></tr>
-        <tr><td>prueba1</td><td>prueba7</td></tr>
-        <tr><td>prueba2</td><td>prueba52</td></tr>
-        <tr><td>prueba3</td><td>prueba74</td></tr>
-        <tr><td>prueba4</td><td>prueba8</td></tr>
-        <tr><td>prueba5</td><td>prueba9</td></tr>
-        <tr><th colspan="2">otra tabla</th></tr>
-        <tr><td rowspan="5">numero a partir del 9</td></tr>
-        <tr><td>10</td></tr>
-        <tr><td>11</td></tr>
-        <tr><td>12</td></tr>
-        <tr><td>13</td></tr>
-    </table>
+    <div class="tablas">   
+        <table border="3">
+            <caption>tabla SIMPLE con numeros</caption>
+            <tr><th>titulo1</th><th>titulo2</th></tr>
+            <tr><td>prueba1</td><td>prueba7</td></tr>
+            <tr><td>prueba2</td><td>prueba52</td></tr>
+            <tr><td>prueba3</td><td>prueba74</td></tr>
+            <tr><td>prueba4</td><td>prueba8</td></tr>
+            <tr><td>prueba5</td><td>prueba9</td></tr>
+            <tr><th colspan="2">otra tabla</th></tr>
+            <tr><td rowspan="5">numero a partir del 9</td></tr>
+            <tr><td>10</td></tr>
+            <tr><td>11</td></tr>
+            <tr><td>12</td></tr>
+            <tr><td>13</td></tr>
+        </table>
 
-    <h3>Creamos tabla compleja</h3>
-    <table border="3">
-        <caption>Tabla compleja</caption>
-        <thead>
-            <tr>
-                <th>AÑO</th>
-                <th>MES</th>
-                <th>DIA</th>
-            </tr>
-        </thead>
+        <h3>Creamos tabla compleja</h3>
+        <table border="3">
+            <caption>Tabla compleja</caption>
+            <thead>
+                <tr>
+                    <th>AÑO</th>
+                    <th>MES</th>
+                    <th>DIA</th>
+                </tr>
+            </thead>
         <!-- En el TFOOT, aunque sea pie de cabecera, hay que poner TH rn lugar de TD-->
-        <tfoot>
-            <tr>
-                <th colspan="4">PIE DE PAGINA DE MUESTRA</th>
-            </tr>
-        </tfoot>
-        <tbody>
-            <tr><th>2020</th><td>Agosto</td><td>lunes</td></tr>
-            <tr><th>2021</th><td>Julio</td><td>Martes</td></tr>
-            <tr><th>2021</th><td>Enero</td><td>Jueves</td></tr>
-            <tr><th>2020</th><td>Agosto</td><td>lunes</td></tr>
-            <tr><th>2021</th><td>Julio</td><td>Martes</td></tr>
-            <tr><th>2021</th><td>Enero</td><td>Jueves</td></tr>
-        </tbody>
-    </table>
-</div>
+            <tfoot>
+                <tr>
+                    <th colspan="4">PIE DE PAGINA DE MUESTRA</th>
+                </tr>
+            </tfoot>
+            <tbody>
+                <tr><th>2020</th><td>Agosto</td><td>lunes</td></tr>
+                <tr><th>2021</th><td>Julio</td><td>Martes</td></tr>
+                <tr><th>2021</th><td>Enero</td><td>Jueves</td></tr>
+                <tr><th>2020</th><td>Agosto</td><td>lunes</td></tr>
+                <tr><th>2021</th><td>Julio</td><td>Martes</td></tr>
+                <tr><th>2021</th><td>Enero</td><td>Jueves</td></tr>
+            </tbody>
+        </table>
+    </div>
+    
+    <!--DIV DE FORMULARIOS-->
 
-<!--DIV DE FORMULARIOS-->
+    <div class="formularios">
+        <h3>Creamos formulario</h3>
+        <form action="forumlario" method="get">
+            <label for="">Introduzca su nombre</label><input type="text" name="name" id="">
+            <input type="submit" value="Enviar">Enviar</input> <br><br>
+            programacion<input type="checkbox" name="programacion" id="">
+            administracion<input type="checkbox" name="administracion" id=""><br><br>
+            opcion SI <input type="radio" name="opcion" id=""> opcion NO <input type="radio" name="opcion" id=""><br><br>
+            Dejanos tu opinion <br>
+            <textarea name="opinion" id=""></textarea>
+        </form>
 
-<div class="formularios">
-    <h3>Creamos formulario</h3>
-     <form action="forumlario" method="get">
-        <label for="">Introduzca su nombre</label><input type="text" name="name" id="">
-        <input type="submit" value="Enviar">Enviar</input> <br><br>
-        programacion<input type="checkbox" name="programacion" id="">
-        administracion<input type="checkbox" name="administracion" id=""><br><br>
-        opcion SI <input type="radio" name="opcion" id=""> opcion NO <input type="radio" name="opcion" id=""><br><br>
-        Dejanos tu opinion <br>
-        <textarea name="opinion" id=""></textarea>
-     </form>
+        <h3>creamos plegable</h3>
+        <form action="" method="get">
+            <caption>Sistema operativo</caption>
+            <select size="1">
+                <option value="" selected="select">-Seleccione un SO-</option>
+                <option value="Windows">Windows</option>
+                <option value="Mac">Mac</option>
+                <option value="Linux">Linux</option>
+            </select>
+        </form>
 
-     <h3>creamos plegable</h3>
-     <form action="" method="get">
-        <caption>Sistema operativo</caption>
-        <select size="1">
-            <option value="" selected="select">-Seleccione un SO-</option>
-            <option value="Windows">Windows</option>
-            <option value="Mac">Mac</option>
-            <option value="Linux">Linux</option>
-        </select>
-     </form>
+        <h3>Plegable con grupos</h3>
+        <form action="" method="get">
+            <label for="">Seleccione App</label>
+            <select size="1">
+                <option value="" selected="selected">--Seleccione app--</option>
+                <optgroup label="Rendimiento">
+                    <option value="Calculadora">Calculadora</option>
+                    <option value="Paint">Paint</option>
+                    <option value="Word">Word</option>
+                    <option value="Excel">Excel</option>
+                </optgroup>
+                <optgroup label="Juegos">
+                    <option value="Baldurs gate">Baldurs gate</option>
+                    <option value="Forza">Forza</option>
+                    <option value="RDR2">RDR2</option>
+                </optgroup>
+            </select>
+        </form>
 
-     <h3>Plegable con grupos</h3>
-     <form action="" method="get">
-        <label for="">Seleccione App</label>
-        <select size="1">
-            <option value="" selected="selected">--Seleccione app--</option>
-            <optgroup label="Rendimiento">
-                <option value="Calculadora">Calculadora</option>
-                <option value="Paint">Paint</option>
-                <option value="Word">Word</option>
-                <option value="Excel">Excel</option>
-            </optgroup>
-            <optgroup label="Juegos">
-                <option value="Baldurs gate">Baldurs gate</option>
-                <option value="Forza">Forza</option>
-                <option value="RDR2">RDR2</option>
-            </optgroup>
-        </select>
-     </form>
+        <h3>TABINDEX</h3>
+        <form action="" method="get">
+            Nombre <input type="text" name="nombre" id="" tabindex="1"><br>
+            Apellidos <input type="text" name="apellidos" id="" tabindex="2"><br>
+            Telefono <input type="text" name="telefono" id="" tabindex="3">
+        </form>
 
-     <h3>TABINDEX</h3>
-     <form action="" method="get">
-        Nombre <input type="text" name="nombre" id="" tabindex="1"><br>
-        Apellidos <input type="text" name="apellidos" id="" tabindex="2"><br>
-        Telefono <input type="text" name="telefono" id="" tabindex="3">
-     </form>
+        <h3>Fieldset y legend</h3>
 
-     <h3>Fieldset y legend</h3>
+        <form action="" method="get">
+            <fieldset>
+                <legend>Datos personales</legend>
+                <label for="nombre">Nombre</label> <br>
+                <input type="text" name="nombre" id="nombre"><br>
+                <label for="apellidos">Apellidos</label> <br>
+                <input type="text" name="apellidos" id="apellidos"><br>
+            </fieldset>
+            <fieldset>
+                <legend>contacto</legend>
+                <label for="telefono">Telefono</label> <br>
+                <input type="text" name="telefono" id="telefono"><br>
+                <label for="email">Correo electronico</label><br>
+                <input type="text" name="email" id="email">
+            </fieldset>
+        </form><br><br>
+       
+    </div>
+    <!--AQUI AÑADIRIAMOS PIE DE PAGINA, AUNQUE NO ESTA BIEN SITUADO, HAY QUE MIRAR ESO-->
 
-     <form action="" method="get">
-        <fieldset>
-            <legend>Datos personales</legend>
-            <label for="nombre">Nombre</label> <br>
-            <input type="text" name="nombre" id="nombre"><br>
-            <label for="apellidos">Apellidos</label> <br>
-            <input type="text" name="apellidos" id="apellidos"><br>
-        </fieldset>
-        <fieldset>
-            <legend>contacto</legend>
-            <label for="telefono">Telefono</label> <br>
-            <input type="text" name="telefono" id="telefono"><br>
-            <label for="email">Correo electronico</label><br>
-            <input type="text" name="email" id="email">
-        </fieldset>
-     </form><br><br>
-</div>
+    <div class="piedepagina">
+        <h2>Este seria el pie de pagina</h2>
+    </div> 
      <!-- Aqui Añadimos un comentario -->
+    <div class="media">
+        <iframe src="" frameborder="2" width="200" height="200" scrolling="yes"></iframe><br><br>
 
-     <iframe src="" frameborder="2" width="200" height="200" scrolling="yes"></iframe><br><br>
+        <audio controls>
+            <source src="archivos/audio/ambient-design-179116.mp3" type="audio/mp3">
+        </audio><br><br>
 
-     <audio controls>
-        <source src="archivos/audio/ambient-design-179116.mp3" type="audio/mp3">
-     </audio><br><br>
-
-     <audio controls>
-        <source src="archivos/audio/ocean-breeze-beat-by-jtwayne-213318(1).mp3" type="audio/mp3">
-     </audio><br><br>
+        <audio controls>
+            <source src="archivos/audio/ocean-breeze-beat-by-jtwayne-213318(1).mp3" type="audio/mp3">
+        </audio><br><br>
 
 
-     <video width="300" height="300" controls loop poster="archivos/imagen/repro video.png">
-        <source src="archivos/video/Raindrops_Videvo_720p_5000br.mp4" ><br>
-     </video><br><br>
+        <video width="300" height="300" controls loop poster="archivos/imagen/repro video.png">
+            <source src="archivos/video/Raindrops_Videvo_720p_5000br.mp4" ><br>
+        </video><br><br>
 
      <!-- Aqui dibujaremos una linea con comando SVG -->
 
-     <svg with="200" height="200">
-        <line x1="5" y1="5" x2="190" y2="190" stroke="red" stroke-width="5"></line>
-     </svg><br>
+        <svg with="200" height="200">
+            <line x1="5" y1="5" x2="190" y2="190" stroke="red" stroke-width="5"></line>
+        </svg><br>
 
      <!-- Esta es una linea horizontal que ocupa parte de la pantalla, nos servira
       para dividir partes por ejemplo-->
 
-     <svg width="100%" heigth="10">
-        <line x1="1%" y1="5" x2="99%" y2="5" stroke="green" stroke-width="3"></line>
-     </svg> <br>
+        <svg width="100%" heigth="10">
+            <line x1="1%" y1="5" x2="99%" y2="5" stroke="green" stroke-width="3"></line>
+        </svg> <br>
 
-     <svg width="300" height="300">
-        <polygon points="100,5 15,180 190,80 5,80 190,180"
-        style="fill:aqua;stroke:blue;stroke-width:3;fill-rule:evvenod">
-     </svg>
-
+        <svg width="300" height="300">
+            <polygon points="100,5 15,180 190,80 5,80 190,180"
+            style="fill:aqua;stroke:blue;stroke-width:3;fill-rule:evvenod">
+        </svg>
+        
+    </div>
+    
+</div>
 </body>
+
 <br><br><br><br><br><br>
 <br><br><br><br><br><br>
 <br><br><br><br><br><br>
