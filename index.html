@@ -15,32 +15,37 @@
     <button>Pulsame!</button>
     <pre>Lorem, ipsum dolor            sit amet consectetur adipisicing elit. Explicabo quidem delectus <br>sit expedita ipsa adipisci sapiente amet, voluptatibus eveniet possimus, nihil sunt aspernatur, modi aut quaerat aliquam eaque fugiat saepe.</pre>
     
-    <div id="listaordenada">
-        <ul>
-            <li id="titlelista"> Lsta de la compra
-                <ul>
-                    <li>pan</li>
-                    <li>leche</li>
-                    <li>huevos</li>
-                    <li>aceite</li>
-                </ul>
+    <!--LISTAS-->
+    <div class="listas">
+        <div id="listaordenada">
+            <ul>
+                <li id="titlelista"> Lsta de la compra
+                    <ul>
+                        <li><a href="">pan</a></li>
+                        <li><a href="">leche</a></li>
+                        <li><a href="">huevos</a></li>
+                        <li><a href="">aceite</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <ol>
+            <li>listado
+                <ol>
+                    <li>primero</li>
+                    <li>segundo</li>
+                    <li>tercero</li>
+                    <li>cuarto</li>
+                </ol>
             </li>
-        </ul>
-</div>
-    <ol>
-        <li>listado
-            <ol>
-                <li>primero</li>
-                <li>segundo</li>
-                <li>tercero</li>
-                <li>cuarto</li>
-            </ol>
-        </li>
-    </ol>
-    <dl>
-        <dt>HTML</dt>
-        <dd>Hyper text markup language</dd>
-    </dl>
+        </ol>
+        <dl>
+            <dt>HTML</dt>
+            <dd>Hyper text markup language</dd>
+        </dl>
+    </div>
+    <!--DIV DE TABLAS-->
+ <div class="tablas">   
     <table border="3">
         <caption>tabla SIMPLE con numeros</caption>
         <tr><th>titulo1</th><th>titulo2</th></tr>
@@ -82,7 +87,11 @@
             <tr><th>2021</th><td>Enero</td><td>Jueves</td></tr>
         </tbody>
     </table>
+</div>
 
+<!--DIV DE FORMULARIOS-->
+
+<div class="formularios">
     <h3>Creamos formulario</h3>
      <form action="forumlario" method="get">
         <label for="">Introduzca su nombre</label><input type="text" name="name" id="">
@@ -149,7 +158,7 @@
             <input type="text" name="email" id="email">
         </fieldset>
      </form><br><br>
-
+</div>
      <!-- Aqui Añadimos un comentario -->
 
      <iframe src="" frameborder="2" width="200" height="200" scrolling="yes"></iframe><br><br>

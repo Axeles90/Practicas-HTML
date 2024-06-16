@@ -1,13 +1,10 @@
 #lorem {color: aqua;}
 
-ul{
-    width: 50%;
-}
-
 #listaordenada{
     background-color: rgb(229, 237, 235);
     color: black;
     font-style:italic;
+    width: 50%;
 }
 
 #titlelista li{
@@ -19,7 +16,39 @@ ul{
     box-shadow: 2px 2px grey;
     font-weight: bold;
 }
+#titlelista a{
+    color: black;
+    font-style: normal;
+    text-decoration: none;
+}
+#titlelista a:hover{
+    color: blue;
+}
 #titlelista li:hover{
     background-color: bisque;
     box-shadow: 4px 4px rgb(160, 156, 156);
+}
+input[type="text"]{
+    background: rgb(147, 235, 252);
+}
+.listas{
+    padding: 5px;
+    float: right;
+    width: 50%;
+    border: solid orange 2px;
+    border-radius: 10px;
+}
+.tablas{
+    padding: 5px;
+    margin-top: 10px;
+    float: right;
+    width: 50%;
+    border: solid greenyellow 2px;
+    border-radius: 10px;
+}
+.formularios{
+    padding: 5px;
+    width: 40%;
+    border: solid lightblue 2px;
+    border-radius: 10px;
 }
