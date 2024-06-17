@@ -67,3 +67,19 @@ input[type="text"]{
     text-align: center;
     position: fixed;
 }
+.padre{
+    display: flex;
+    height: 300px;
+    border: white solid 2px;
+    justify-content: center; /* aqui ponemos los hijos centrados en el centro*/
+    flex-wrap: wrap; /* Aqui hacemos que cuando lleguen al limite, pasen a la linea de abajo */
+    align-content: space-between; /* para que se separen entre los elementos por igual medida */
+    align-content: space-around; /*para que se separen de la caja por igual medida*/
+    align-content: stretch; /*para que opcupen todo el espacio que puedan  */
+}
+.hijo{
+    border: solid grey 2px;
+    padding: 10px;
+    margin: 5px;
+    width: 33%; /* Aqui hacemos que ocupe el 33% del FLEX para que la siguiente linea pase hacia abajo */
+}
