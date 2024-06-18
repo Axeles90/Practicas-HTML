@@ -1,5 +1,25 @@
-#lorem {color: aqua;}
-
+body{
+    width: 2000px;
+    margin: auto;
+    min-width: 2000px;
+    background-color: black;
+    color: white;
+}
+#google{
+    text-decoration: none;
+}
+#lorem {
+    color: aqua;
+    column-count: 5;
+    column-rule-style:solid; /* ponemos el estilo de forma con la que separan las columnas*/
+    column-rule-color: blueviolet; /* ponemos el color de la linea que separa las columnas */
+    column-rule-width: 5px; /* definimos el ancho de la lina que separa las columnas */
+}
+#loremscroll{
+    width: 200px;
+    height: 100px;
+    overflow: scroll;
+}
 #listaordenada{
     background-color: rgb(229, 237, 235);
     color: black;
@@ -47,7 +67,9 @@ input[type="text"]{
     border-radius: 10px;
 }
 .formularios{
-    padding: 5px;
+    column-count: 2; /*ponemos en cuantas columnas queremos que se divida el contenedor */
+    column-gap: 30px; /* Marcamos el espacio entre las columnas */
+    padding: 20px;
     width: 40%;
     border: solid lightblue 2px;
     border-radius: 10px;
@@ -59,7 +81,8 @@ input[type="text"]{
 }
 .piedepagina{
     float: right;
-    width: 99%;
+    width: 2000px;
+    margin-top: 400px;
     height: 100%;
     background-color: rgb(193, 192, 192);
     border: solid grey 3px;
