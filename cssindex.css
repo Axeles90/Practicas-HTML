@@ -114,7 +114,7 @@ input[type="text"]{
     border: solid greenyellow 2px;
     border-collapse: collapse;
 }
-#sudoku td,th{
+#sudoku td, #sudoku th{
     border: solid grey 2px;
     padding: 8px;
 }
@@ -122,6 +122,6 @@ input[type="text"]{
     background-color: aquamarine;
     color: black;
 }
-#sudoku td:hover,th:hover{
+#sudoku td:hover,#sudoku th:hover{
     background-color: blueviolet;
 }
