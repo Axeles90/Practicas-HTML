@@ -108,3 +108,20 @@ input[type="text"]{
     margin: 5px;
     width: 33%; /* Aqui hacemos que ocupe el 33% del FLEX para que la siguiente linea pase hacia abajo */
 }
+#sudoku{
+    width: 300px;
+    text-align: center;
+    border: solid greenyellow 2px;
+    border-collapse: collapse;
+}
+#sudoku td,th{
+    border: solid grey 2px;
+    padding: 8px;
+}
+#sudoku tr:hover{
+    background-color: aquamarine;
+    color: black;
+}
+#sudoku td:hover,th:hover{
+    background-color: blueviolet;
+}
